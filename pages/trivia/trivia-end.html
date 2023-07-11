@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" sizes="16x16" href="/cdn-cgi/image/format=webp,fit=contain,quality=80/trivia/assets/images/favicon/favicon-16x16.png">
+  <link rel="icon" sizes="32x32" href="/cdn-cgi/image/format=webp,fit=contain,quality=80/trivia/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" sizes="192x192" href="/cdn-cgi/image/format=webp,fit=contain,quality=80/trivia/assets/images/favicon/android-chrome-192x192.png">
+  <link rel="icon" sizes="512x512" href="/cdn-cgi/image/format=webp,fit=contain,quality=80/trivia/assets/images/favicon/android-chrome-512x512.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Quiz Full Story Start">
+  <title>Quiz Full Story Start</title>
+  <meta property="og:image" content="/cdn-cgi/image/format=webp,fit=contain,quality=80/trivia/assets/images/Site-image.jpg">
+  <link rel="preconnect" href="https://google.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script type="module" crossorigin src="/assets/easytimer-0f28fbb7.js"></script>
+  <script type="module" crossorigin src="/assets/trivia-start-83ba50a2.js"></script>
+  <link rel="stylesheet" href="/assets/trivia-start-c565d9b4.css">
+</head>
+
+<body>
+  <header>
+    <a href="">QUIZZY</a>
+    <a href="">
+      <i></i>
+    </a>
+  </header>
+  <main>
+    <section class="hero">
+      <img src="/cdn-cgi/image/format=webp,fit=contain,quality=80/trivia/assets/images/trivia-start-hero.png" alt="hero-img">
+      <div>
+        <img src="/cdn-cgi/image/format=webp,fit=contain,quality=80/trivia/assets/images/trivia-roblox-image.png" alt="roblox-img">
+        <p>Quiz tournament</p>
+        <span>
+          <span>Week</span>
+          <span id="quiz-week">32</span>
+        </span>
+      </div>
+    </section>
+    <section class="content end">
+      <header>
+        <div>
+          <img src="/cdn-cgi/image/format=webp,fit=contain,quality=80/trivia/assets/images/trivia-bronze-cup-image.png" alt="cup-img">
+        </div>
+        <div>
+          <h4>Congratulations!</h4>
+          <p>You have passed bronze quest</p>
+          <span>
+            <label>Your score: </label>
+            <span id="trivia-score">13</span>
+          </span>
+        </div>
+      </header>
+      <div>
+        <h6>You unlocked premium tournament:</h6>
+        <div>
+          <div>
+            <img src="/cdn-cgi/image/format=webp,fit=contain,quality=80/trivia/assets/images/trivia-silver-coins-image.png" alt="trivia-silver-coins-img-1">
+            <img class="silver-coin-small" src="/cdn-cgi/image/format=webp,fit=contain,quality=80/trivia/assets/images/trivia-silver-coins-image.png" alt="trivia-silver-coins-img-2">
+            <img class="silver-coin-medium" src="/cdn-cgi/image/format=webp,fit=contain,quality=80/trivia/assets/images/trivia-silver-coins-image.png" alt="trivia-silver-coins-img-3">
+            <img src="/cdn-cgi/image/format=webp,fit=contain,quality=80/trivia/assets/images/trivia-check-image.png" alt="trivia-check-img">
+          </div>
+          <div>
+            <h5>Silver Quiz</h5>
+            <span>Participation available</span>
+          </div>
+          <div class="separator"></div>
+          <div>
+            <img src="/cdn-cgi/image/format=webp,fit=contain,quality=80/trivia/assets/images/trivia-coins-image.png" alt="trivia-coin-image">
+            <span>1700</span>
+            <label>Robux</label>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <a href="" id="trivia-cta">
+          <img src="/cdn-cgi/image/format=webp,fit=contain,quality=80/trivia/assets/images/trivia-button-coins-image.png" alt="">
+          Take Silver Quiz
+          <span>❯</span>
+        </a>
+      </footer>
+    </section>
+  </main>
+  <script>const links = Array.from(document.querySelectorAll('a'));
+
+links.forEach((link, index) => {
+  const l = link.href.split('?')[0];
+  link.href = `${l}${window.location.search}`;
+});
+</script>
+  
+  
+    <script src="https://js.sentry-cdn.com/6718800afcfd4abdb690ba0cb7279085.min.js" crossorigin="anonymous"></script>
+    <script>
+      window.errorArray.forEach(error => {
+        Sentry.captureException(error);
+      });
+      window.errorArray = [];
+    </script>
+  
+</body>
+
+</html>
