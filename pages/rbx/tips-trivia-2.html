@@ -1,0 +1,2149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script>
+    window.errorArray = [];
+  </script>
+  <script>
+    window.variantFromUrl = new URL(location.href).searchParams.get('ab-variant');
+  </script>
+  <script>
+    window.getAdsVariation = () => {
+      if (window.variantFromUrl) {
+        localStorage.setItem('rbx:tips:experiment:ads', window.variantFromUrl);
+      }
+      const v = window.variantFromUrl || localStorage.getItem('rbx:tips:experiment:ads');
+
+      switch (v) {
+        case 'ab-fixed':
+          return 'ab-fixed';
+        default:
+          let variation = 'ab-fixed';
+          return variation;
+      }
+    };
+    window.variant = window.getAdsVariation();
+    window.removeLoading = () => {
+      const blocks = document.querySelectorAll('.loading');
+      blocks.forEach(block => block.classList.remove('loading'));
+      window.contentVisible = true;
+    };
+    window.contentVisible = false;
+    document.documentElement.classList.add(window.variant);
+  </script>
+  <link rel="icon" sizes="16x16" href="/cdn-cgi/image/format=webp,fit=contain,quality=80/rbx/assets/images/favicon/favicon-16x16.png">
+  <link rel="icon" sizes="32x32" href="/cdn-cgi/image/format=webp,fit=contain,quality=80/solitaire/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" sizes="192x192" href="/cdn-cgi/image/format=webp,fit=contain,quality=80/solitaire/assets/images/favicon/android-chrome-192x192.png">
+  <link rel="icon" sizes="512x512" href="/cdn-cgi/image/format=webp,fit=contain,quality=80/solitaire/assets/images/favicon/android-chrome-512x512.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="The Ultimate Guide to Get Extra Robux: 13 Real Tips You Won't Find Anywhere Else! (May 2023) ">
+  <title>The Ultimate Guide to Get Extra Robux: 13 Real Tips You Won't Find Anywhere Else! (May 2023) </title>
+  <meta property="og:image" content="/cdn-cgi/image/format=webp,fit=contain,quality=80/solitaire/assets/images/Site-image.jpg">
+  <link rel="preload" href="https://securepubads.g.doubleclick.net/tag/js/gpt.js" as="script">
+  <link rel="preload" href="https://fundingchoicesmessages.google.com/i/22735011646?ers=3" as="script">
+  <link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=wikitostudy.com" as="script">
+  <link rel="preload" href="https://tpc.googlesyndication.com/sodar/sodar2.js" as="script">
+  <link rel="preload" href="https://securepubads.g.doubleclick.net/pagead/ppub_config?ippd=wikitostudy.com" as="fetch" crossorigin>
+  <link rel="preconnect" href="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin>
+  <link rel="preconnect" href="https://fundingchoicesmessages.google.com" crossorigin>
+  <link rel="preconnect" href="https://adservice.google.com" crossorigin>
+  <link rel="preconnect" href="https://tpc.googlesyndication.com" crossorigin>
+  <link rel="preconnect" href="https://google.com" crossorigin>
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+  <link rel="preconnect" href="https://cdn.ampproject.org" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  <script>
+
+    window.googletag = window.googletag || {
+      cmd: [],
+    };
+
+    const fixed = [
+      {
+        slot: '/22735011646/tipsv2_mobile_336x280_center_(start:v2-fixed)',
+        sizes: [
+          [300, 250],
+          [336, 280],
+        ],
+        id: 'display-top',
+      },
+    ];
+
+    const _experiments = {
+      'ab-fixed': {
+        banners: fixed,
+        interstitial: '/22735011646/tipsv2_mobile__inter_(start:v2-fixed)',
+        rewarded: '/22735011646/tipsv2_mobile__reward_(start:v2-fixed)',
+        isSRA: true,
+      },
+    };
+    window.pandasConfig = {
+      SENTRY_ID: '2fe39ab4f5b24784a6fb28ca49594568',
+      APP_ID: 1,
+      EXPERIMENTS: _experiments[window.variant || 'control'],
+      VERSION_LANDING: 35,
+      VERSION_PAN: 33,
+      GTAG: 'AW-782505921',
+    };
+  </script>
+  <script>const titleStyle = "color:#1a1a1a;background:#ecedee;padding:8px 12px;borderradius: 3px;";
+const textStyle = "color:#175658;background:#20b6de;padding:6px;border-radius:3px;";
+const shouldLogEvents = localStorage.getItem('logEvents') === 'enabled' && !location.href.includes('log-events=false') || location.href.includes('log-events=true');
+
+if (location.href.includes('log-events=true')) localStorage.setItem('logEvents', 'enabled');
+if (location.href.includes('log-events=false')) localStorage.setItem('logEvents', 'disabled');
+
+if (shouldLogEvents) {
+  console.log(`%cLanding Page Version:%c${window.pandasConfig.VERSION_LANDING}`, `${titleStyle}`, `${textStyle}`);
+  console.log(`%cPan Version:%c${window.pandasConfig.VERSION_PAN}`, `${titleStyle}`, `${textStyle}`);
+}
+
+class Logger {
+  constructor(type) {
+    this.type = type;
+  }
+
+  showLog(data) {
+    if (!shouldLogEvents) return;
+    if (!this.type) {
+      console.log(`%c${data}`, `${textStyle}`);
+    } else {
+      if (typeof data === 'string') console.log(`%c${this.type}:%c${data}`, `${titleStyle}`, `${textStyle}`);
+      if (typeof data === 'object') {
+        console.group(this.type);
+        console.table(data);
+        console.groupEnd(this.type);
+      }
+    }
+  }
+}
+
+window.Logger = Logger;</script>
+  <script>const gtagLogger = new window.Logger('Gtag');
+const GTAG_MAPPER = {
+  'second-unique': {
+    event: 'second-unique',
+    args: {
+      gtag_id: 'gtag_id',
+    },
+    unique: 'sessionStorage',
+  },
+  'inter-show': {
+    event: 'inter-show',
+    args: {
+      gtag_id: 'gtag_id',
+    },
+  },
+  're-ok': {
+    event: 're-ok',
+    args: {
+      gtag_id: 'gtag_id',
+    },
+  },
+};
+
+class Gtag {
+  constructor({ id } = {}) {
+    this.id = id;
+    this.inited = false;
+    this.gtag = null;
+    this.mapper = GTAG_MAPPER;
+  }
+  init() {
+    gtagLogger.showLog('init');
+    window.dataLayer = window.dataLayer || [];
+    this.gtag = function gtag() {
+      dataLayer.push(arguments);
+    };
+    const mainScript = document.createElement('script');
+
+    mainScript.innerHTML = `
+      ${this.gtag('js', new Date())};
+      ${this.gtag('config', `${this.id}`)};
+    `;
+
+    const script = document.createElement('script');
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${this.id}`;
+    script.async = true;
+    script.classList.add('gtag');
+    document.head.appendChild(script);
+  }
+
+  checkMapper(event, pandasEvent) {
+    if (!GTAG_MAPPER[event]) {
+      console.warn(
+        `Gtag Mapper doesn\'t have such event: ${event || pandasEvent}`
+      );
+      return null;
+    }
+    gtagLogger.showLog('check mapper');
+    return true;
+  }
+
+  track(pandasArgs, args) {
+    if (location.href.includes('.html') || location.href.includes('.local')) return;
+
+    if (!this.checkMapper(args.e, pandasArgs.e)) return;
+    var callback = function () {
+      if (typeof url != 'undefined') {
+        window.location = url;
+      }
+    };
+
+    gtagLogger.showLog('track');
+    if (!this.inited) {
+      this.init();
+      this.inited = true;
+    }
+    this.gtag('event', 'conversion', {
+      send_to: `${this.id}/${args.p.id}`,
+      transaction_id: '',
+      event_callback: callback,
+    });
+  }
+}
+
+window.gtag = new Gtag({ id: window.pandasConfig.GTAG });
+</script>
+  <script>/**
+ * JavaScript Client Detection
+ * (C) viazenetti GmbH (Christian Ludwig)
+ */
+(function (window) {
+	{
+		// browser
+		var nAgt = navigator.userAgent;
+		var browser = navigator.appName;
+		var nameOffset, verOffset;
+
+    	if ((verOffset = nAgt.indexOf('SamsungBrowser')) != -1) {
+			browser = 'sam';
+		}
+		// Edge (Chromium)
+		else if ((verOffset = nAgt.indexOf('Edg')) != -1) {
+			browser = 'm';
+		}
+		// Chrome
+		else if ((verOffset = nAgt.indexOf('Chrome')) != -1) {
+			browser = 'c';
+		}
+		// Safari
+		else if ((verOffset = nAgt.indexOf('Safari')) != -1) {
+			browser = 's';
+		}
+		// Firefox
+		else if ((verOffset = nAgt.indexOf('Firefox')) != -1) {
+			browser = 'f';
+		}
+		// Other browsers
+		else if ((nameOffset = nAgt.lastIndexOf(' ') + 1) < (verOffset = nAgt.lastIndexOf('/'))) {
+			browser = nAgt.substring(nameOffset, verOffset);
+			if (browser.toLowerCase() == browser.toUpperCase()) {
+				browser = navigator.appName;
+			}
+		}
+
+		// system
+		var os = '-';
+		var clientStrings = [
+			{s:'w', r:/(Windows 10.0|Windows NT 10.0)/},
+			{s:'w', r:/(Windows 8.1|Windows NT 6.3)/},
+			{s:'w', r:/(Windows 8|Windows NT 6.2)/},
+			{s:'w', r:/(Windows 7|Windows NT 6.1)/},
+			{s:'w', r:/Windows NT 6.0/},
+			{s:'w', r:/Windows NT 5.2/},
+			{s:'w', r:/(Windows NT 5.1|Windows XP)/},
+			{s:'w', r:/(Windows NT 5.0|Windows 2000)/},
+			{s:'w', r:/(Win 9x 4.90|Windows ME)/},
+			{s:'w', r:/(Windows 98|Win98)/},
+			{s:'w', r:/(Windows 95|Win95|Windows_95)/},
+			{s:'w', r:/(Windows NT 4.0|WinNT4.0|WinNT|Windows NT)/},
+			{s:'w', r:/Windows CE/},
+			{s:'w', r:/Win16/},
+			{s:'a', r:/Android/},
+			{s:'c', r:/CrOS/},
+			{s:'l', r:/(Linux|X11(?!.*CrOS))/},
+			{s:'i', r:/(iPhone|iPad|iPod)/},
+			{s:'x', r:/Mac OS X/},
+			{s:'x', r:/(Mac OS|MacPPC|MacIntel|Mac_PowerPC|Macintosh)/},
+		];
+		for (var id in clientStrings) {
+			var cs = clientStrings[id];
+			if (cs.r.test(nAgt)) {
+				os = cs.s;
+				break;
+			}
+		}
+	}
+
+	window.jscd = {
+		browser: browser,
+		os: os,
+	};
+}(this));
+</script>
+  <script>const genericData = {
+  e: 'e',
+  c: 'c',
+};
+
+const keys = ['e', 'l', 'id', 't', 'type'];
+
+const PANDAS_MAPPER = {
+  're-show': {
+    event: 're-show',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  're-ok': {
+    event: 're-ok',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  're-close': {
+    event: 're-close',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'inter-ready': {
+    event: 'inter-ready',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'display-view': {
+    event: 'display-view',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  're-ready': {
+    event: 're-ready',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  're-loaded': {
+    event: 're-loaded',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'display-loaded': {
+    event: 'display-loaded',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'display-first': {
+    event: 'display-first',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  start: {
+    event: 'start',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  exit: {
+    event: 'exit',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  first: {
+    event: 'first',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'inter-loaded': {
+    event: 'inter-loaded',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  view: {
+    event: 'view',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  click: {
+    event: 'click',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  LCP: {
+    event: 'LCP',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'page-dev': {
+    event: 'page-dev',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'page-load': {
+    event: 'page-load',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  '30-sec': {
+    event: '30-sec',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'inter-shown': {
+    event: 'inter-shown',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'inter-closed': {
+    event: 'inter-closed',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'scroll-50': {
+    event: 'scroll-50',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  page: {
+    event: 'page',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'tip-next': {
+    event: 'tip-next',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'tip-only-5': {
+    event: 'tip-only-5',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'tip-only-10': {
+    event: 'tip-only-10',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'trivia-start': {
+    event: 'trivia-start',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'trivia-answer': {
+    event: 'trivia-answer',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'trivia-each-5': {
+    event: 'trivia-each-5',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'trivia-only-3': {
+    event: 'trivia-only-3',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'trivia-only-6': {
+    event: 'trivia-only-6',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+  'trivia-only-10': {
+    event: 'trivia-only-10',
+    args: {
+      ...genericData,
+      p: 'p',
+    },
+  },
+};
+
+function getParents(el) {
+  let a = el;
+  const els = [];
+  while (a) {
+    const nodeName = a.nodeName.toLowerCase();
+    let parent = a.parentNode;
+    let deepName = '';
+    if (parent) {
+      const index = Array.prototype.indexOf.call(parent.children, a);
+      deepName = nodeName.concat(`:nth-child(${index + 1})`);
+    }
+    els.unshift(deepName || nodeName);
+    if (parent.nodeName === 'HTML') {
+      parent = null;
+    }
+    a = parent;
+  }
+  return els.join('>');
+}
+
+function getCookie(name) {
+  const value = `; ${document.cookie}`;
+  const parts = value.split(`; ${name}=`);
+  if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
+function removeEmpty(obj) {
+  if (!obj) return null;
+  const data = Object.entries(obj)
+    .filter(([_, v]) => v != null)
+    .reduce((acc, [k, v]) => ({ ...acc, [k]: v }), {});
+  return Object.entries(data).length ? data : null;
+}
+function generateRandomHash(length) {
+  let result = '';
+  const characters =
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const charactersLength = characters.length;
+  let counter = 0;
+  while (counter < length) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    counter += 1;
+  }
+  return result;
+}
+const _userID = generateRandomHash(8);
+const _sessionID = generateRandomHash(4);
+
+const _startUrl = location.pathname;
+const referrer = document.referrer;
+
+function getDeviceType() {
+  const ua = navigator.userAgent;
+  switch (true) {
+    case /(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua):
+      return 't';
+    case /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
+      ua
+    ):
+      return 'm';
+    default:
+      return 'd';
+  }
+}
+
+function networkSourceMapper(value) {
+  switch (value) {
+    case 'facebook':
+      return 'f';
+    case 'google':
+      return 'g';
+    case 'unity':
+      return 'u';
+    case 'tiktok':
+      return 't';
+    default:
+      return value;
+  }
+}
+
+const pandasLogger = new window.Logger('Pandas');
+
+class Pandas {
+  constructor(
+    { API_URL = 'https://wikitostudy.com/pan-das', a, vl, vp } = {
+      API_URL: 'https://wikitostudy.com/pan-das',
+    }
+  ) {
+    const {
+      utm_campaign,
+      utm_term,
+      utm_source,
+      fbclid,
+      gclid,
+      ab_test_cookie,
+    } = Pandas.getParamsToObject(document.URL);
+
+    const sessionID = sessionStorage.getItem('PanDas:sessionID') || _sessionID;
+    const adsViewed = +(sessionStorage.getItem('PanDas:adsViewed') || 0);
+    const adsLoaded = +(sessionStorage.getItem('PanDas:adsLoaded') || 0);
+
+    const viewRewarded = +(localStorage.getItem('PanDas:viewRewarded') || 0);
+    const viewDisplay = +(localStorage.getItem('PanDas:viewDisplay') || 0);
+    const viewInter = +(localStorage.getItem('PanDas:viewInter') || 0);
+
+    const userID =
+      getCookie('user_id') ||
+      localStorage.getItem('PanDas:userID') ||
+      `_${_userID}`;
+    const startUrl = localStorage.getItem('PanDas:startUrl') || _startUrl;
+    const pageNumber = +(localStorage.getItem('PanDas:pageNumber') || 0);
+    const firstTime =
+      localStorage.getItem('PanDas:firstTime') || new Date().getTime();
+    const batch = +(localStorage.getItem('PanDas:batch') || 0);
+
+    sessionStorage.setItem('PanDas:sessionID', sessionID);
+
+    localStorage.setItem('PanDas:userID', userID);
+    localStorage.setItem('PanDas:pageNumber', pageNumber);
+    localStorage.setItem('PanDas:firstTime', firstTime);
+
+    this.API_URL = API_URL;
+    this.info = {
+      a: a, // application id - to understand exactly which website we get the data from - sets manually in html
+      u: userID, // user id - randomly generated hash for each user that is stored in cookies or localstorage
+      pn: pageNumber, // the ordered number of pages that user has visited from the first entry on a website, stored in localstorage
+      s: sessionID, // the randomly generated hash id of current user session - every new opening of a website tab has an unique id
+      ab: ab_test_cookie || window.variant, // ?
+      ac: utm_campaign, // some id from ad url ?
+      aa: utm_term, // some id from ad url ?
+      g: fbclid || gclid, // some id from ad url ?
+      as: networkSourceMapper(utm_source), // social referrer
+      pu: startUrl, // the path of the url of the current page (should be the first visited page - todo ?)
+      pr: referrer, // the previous visited page (where the user came from) / referrer
+      dc: getDeviceType(), // the type of user's device - mobile/tablet/desktop
+      dw: window.screen.width, // user's device screen width
+      dh: window.screen.height, // user's device screen height
+      cw: window.innerWidth, // the current width of user's device window viewport - can be resizable
+      ch: window.innerHeight, // the current height of user's device window viewport - can be resizable
+      tz: new Date().getTimezoneOffset(), // timezone different in minutes between the local computer time and UTC
+      ts: null, // difference between event occuring and page starting time (determines later)
+      b: batch, // the ordered number of total requests that user has sended from the first entry, stored in localstorage
+      av: adsViewed, // the total number of viewed ads during the current session (resets after website tab was closed)
+      al: adsLoaded, // the total number of loaded ads during the current session (resets after website tab was closed)
+      ai: 0, // state of interstitial ad (todo ?)
+      ar: 0, // state of rewarded ad ?
+      vl: vl, // landing version - sets manually in html
+      vp: vp, // pan version - sets manually in html
+      vr: viewRewarded, // rewarded ad view count
+      vd: viewDisplay, // display ad view count
+      vi: viewInter, // interstitial ad view count
+    };
+
+    this.stack = [];
+    this.online = true;
+    this.bumpPageNumber();
+    this.initListeners();
+
+    this.customHash = '';
+
+    this.mapper = PANDAS_MAPPER;
+  }
+
+  bumpAdsViewedNumber() {
+    pandasLogger.showLog('bump ads viewed number');
+    this.info.av++;
+    sessionStorage.setItem('PanDas:adsViewed', this.info.av);
+  }
+
+  bumpAdsLoadedNumber() {
+    pandasLogger.showLog('bump ads loaded number');
+    this.info.al++;
+    sessionStorage.setItem('PanDas:adsLoaded', this.info.al);
+  }
+
+  bumpPageNumber() {
+    pandasLogger.showLog('bump page number');
+    this.info.pn++;
+    localStorage.setItem('PanDas:pageNumber', this.info.pn);
+  }
+
+  static getParamsToObject(url) {
+    pandasLogger.showLog('get params to object');
+    const search = url.searchParams || new URL(url).searchParams;
+    const utm_campaign = search.get('utm_campaign');
+    const utm_term = search.get('utm_term');
+    const utm_source = search.get('utm_source');
+    const fbclid = search.get('fbclid');
+    const gclid = search.get('gclid');
+    const ab_test_cookie = search.get('ab_test_cookie');
+    return {
+      utm_campaign,
+      utm_term,
+      utm_source,
+      fbclid,
+      gclid,
+      ab_test_cookie,
+    };
+  }
+
+  checkMapper(event) {
+    if (!PANDAS_MAPPER[event]) {
+      pandasLogger.showLog("Pandas Mapper doesn't have such event");
+      return null;
+    }
+    return true;
+  }
+
+  async track(args) {
+    const { e, p, c, tc } = args || {};
+    if (!this.checkMapper(e)) return;
+    pandasLogger.showLog(`track: ${e}`);
+    const param = removeEmpty(p);
+    const encoded = param ? encodeURIComponent(JSON.stringify(param)) : null;
+    this.info.b += 1;
+    localStorage.setItem('PanDas:batch', this.info.b);
+    const { ts, ...rest } = this.info;
+    const params = {
+      c,
+      e,
+      p: encoded,
+      tc,
+      ts: Math.ceil(performance.now()),
+      os: jscd.os,
+      br: jscd.browser,
+      ...rest,
+    };
+
+    const data = new URLSearchParams(removeEmpty(params)).toString();
+    const url = `${this.API_URL + '?' + data}`;
+    if (!navigator.onLine || !this.online) {
+      this.addRequestToStack(url);
+      return;
+    }
+
+    const response = await this.send(url);
+    return response;
+  }
+
+  async send(url) {
+    const data = [];
+    data.push(
+      JSON.parse(
+        '{"' +
+          decodeURI(
+            (url.split('?')[1] || '').replace(/&/g, '","').replace(/=/g, '":"')
+          ) +
+          '"}'
+      )
+    );
+    pandasLogger.showLog(data);
+    if (
+      window.location.pathname.includes('.html') ||
+      window.location.pathname.includes('.local')
+    ) {
+      const data = [];
+      data.push(
+        JSON.parse(
+          '{"' +
+            decodeURI(
+              (url.split('?')[1] || '')
+                .replace(/&/g, '","')
+                .replace(/=/g, '":"')
+            ) +
+            '"}'
+        )
+      );
+      pandasLogger.showLog(data);
+      return;
+    }
+    let response;
+    if (navigator.sendBeacon) {
+      response = await navigator.sendBeacon(url);
+    } else {
+      response = await fetch(url);
+    }
+    return response;
+  }
+
+  addRequestToStack(url) {
+    pandasLogger.showLog('add request to stack');
+    this.stack.push(url);
+  }
+
+  initListeners() {
+    pandasLogger.showLog('init listeners');
+    window.addEventListener('offline', () => {
+      this.online = false;
+    });
+    window.addEventListener('online', () => {
+      this.online = true;
+      this.stack.forEach((url) => {
+        this.send(url);
+      });
+      this.stack = [];
+    });
+
+    const timeout = 30000;
+
+    window.addEventListener('load', (event) => {
+      this.track({
+        e: 'page-load',
+        c: 'tech',
+      });
+    });
+
+    this.track({
+      e: 'start',
+      c: 'tech',
+    });
+
+    setTimeout(() => {
+      this.track({
+        e: '30-sec',
+        c: 'engagement',
+      });
+    }, timeout);
+
+    let eventFired = false;
+
+    window.addEventListener('scroll', () => {
+      const scrollPosition = window.scrollY || window.pageYOffset;
+      const windowHeight = window.innerHeight;
+      const documentHeight = Math.max(
+        document.body.scrollHeight,
+        document.body.offsetHeight,
+        document.documentElement.clientHeight,
+        document.documentElement.scrollHeight,
+        document.documentElement.offsetHeight
+      );
+
+      const scrollCenter = scrollPosition + windowHeight / 2;
+      const pageCenter = documentHeight / 2;
+
+      if (scrollCenter >= pageCenter && !eventFired) {
+        this.track({
+          e: 'scroll-50',
+          c: 'engagement',
+        });
+        eventFired = true;
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      this.customHash = generateRandomHash(4);
+      const target = e.target;
+      // let hashed_selector = null;
+      let selector = getParents(target);
+
+      // body:nth-child(2) > div:nth-child(1) > p:nth-child(1) > span:nth-child(1)
+
+      if (target.nodeName === 'A' || target.closest('a')) {
+        selector = null;
+        // hashed_selector = btoa(getParents(target));
+      }
+
+      const node = target.closest('a') || target;
+      const element_id = node.id.length ? node.id : null;
+      const element_data =
+        node.dataset.url && node.dataset.url.length ? node.dataset.url : null;
+      const element_class = node.className.length ? node.className : null;
+      const element = element_data || element_class || element_id || selector;
+
+      this.track({
+        e: 'click',
+        c: 'engagement',
+        p: {
+          e: element,
+          l: target.nodeName === 'A',
+          id: this.customHash,
+          t:
+            (element_data && 'd') ||
+            (element_class && 'c') ||
+            (element_id && 'id') ||
+            (selector && 's'),
+        },
+      });
+    });
+
+    const observer = new PerformanceObserver((list) => {
+      list.getEntries().forEach((entry) => {
+        if (entry.entryType === 'largest-contentful-paint') {
+          this.track({
+            e: 'LCP',
+            c: 'tech',
+          });
+          observer.disconnect();
+        }
+      });
+    });
+
+    observer.observe({ type: 'largest-contentful-paint', buffered: true });
+
+    window.addEventListener('beforeunload', (e) => {
+      const isLinkClicked = e.target.activeElement.nodeName === 'A';
+      this.track({
+        e: 'exit',
+        c: 'exit',
+        p: {
+          type: isLinkClicked ? 'link' : 'other',
+        },
+      });
+    });
+
+    window.addEventListener('unload', (e) => {
+      this.track({
+        e: 'unload',
+        c: 'exit',
+      });
+    });
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'hidden') {
+        this.track({
+          e: 'hidden',
+          c: 'exit',
+        });
+      }
+    });
+  }
+
+  setState(state, type = 'inter') {
+    pandasLogger.showLog('set state');
+    if (type === 'inter' || type === 're') {
+      const _type = type === 'inter' ? 'ai' : 'ar';
+      this.info[_type] = state;
+      return;
+    }
+    throw new Error('Wrong ad unit type selected, please review your code.');
+  }
+
+  setAIstate(state) {
+    pandasLogger.showLog('set ai state');
+    this.info.ai = state;
+  }
+
+  bumpViewRewarededCount() {
+    this.info.vr++;
+    localStorage.setItem('PanDas:viewRewarded', this.info.vr);
+  }
+
+  bumpViewDisplayCount() {
+    this.info.vd++;
+    localStorage.setItem('PanDas:viewDisplay', this.info.vd);
+  }
+
+  bumpViewInterCount() {
+    this.info.vi++;
+    localStorage.setItem('PanDas:viewInter', this.info.vi);
+  }
+}
+
+window.Pandas = Pandas;
+</script>
+  <script>window.pandas = new window.Pandas({
+  a: window.pandasConfig.APP_ID,
+  vl: window.pandasConfig.VERSION_LANDING,
+  vp: window.pandasConfig.VERSION_PAN,
+});</script>
+  <script>class Analytics {
+  constructor() {
+    this.idfaStatus = localStorage.getItem('idfa') || false;
+    this.trackers = {};
+    this.tempUserID = '';
+  }
+
+  init(trackers) {
+    this.trackers = trackers;
+    this.interateOverTrackersAndCallMethod('init');
+  }
+
+  addTracker({ trackerName, tracker }) {
+    this.trackers[trackerName] = {
+      ...this.trackers[trackerName],
+      tracker,
+    };
+    tracker.init();
+  }
+
+  track(pandasArgs, args) {
+    this.interateOverTrackersAndCallMethod('track', {
+      pandasArgs,
+      args,
+    });
+  }
+
+  /**
+   * Changes status of IDFA to be sent to analytics
+   * @see {@link https://developer.apple.com/documentation/adsupport/asidentifiermanager/1614151-advertisingidentifier} for more information about IDFA
+   * @param {boolean} status - status of whether we should send IDFA to analytics or not
+   */
+  changeIdfaStatus(status) {
+    this.idfaStatus = status;
+  }
+
+  /**
+   * Sets tempUserID to be sent to analytics
+   * @param {string} tempUserID - tempUserID retrieved from backend
+   */
+  setUserId({ tempUserId }) {
+    this.tempUserID = tempUserId;
+    this.interateOverTrackersAndCallMethod('setUserId', {
+      tempUserId: tempUserId,
+    });
+  }
+
+  interateOverTrackersAndCallMethod(method, _args) {
+    Object.entries(this.trackers).map(([trackerName, trackers]) => {
+      trackers.map((tracker) => {
+        let { pandasArgs, args } = _args || {};
+        if (!pandasArgs) pandasArgs = {};
+        if (!args) args = {};
+        if (tracker[method]) tracker[method](pandasArgs, args);
+      });
+    });
+  }
+}
+
+window.analyticsService = new Analytics();
+
+window.analyticsService.init({
+  pandas: [window.pandas],
+  adwords: [window.gtag],
+});
+</script>
+  <script>function getDevice() {
+  switch (true) {
+    case window.innerWidth >= 1200:
+      return 'desktop';
+    case window.innerWidth >= 720 && window.innerWidth < 1199:
+      return 'tablet';
+    default:
+      return 'mobile';
+  }
+}
+
+window.variant = window.variant || 'control';
+window.googletag = window.googletag || {
+  cmd: [],
+};
+window.rbtr = {
+  utmTags: {},
+  prefix: 'rbtr_',
+  tags: ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'],
+  /**
+   * Returns split url search and hash params
+   *
+   * @returns { object } split url search and hash params
+   */
+  getUrlParams: function () {
+    // get search params only
+    const result = window.location.search
+      .slice(1)
+      .split('#')[0]
+      .split('&')
+      .reduce((acc, part) => {
+        const item = part.split('=');
+        acc[item[0]] = decodeURIComponent(item[1]);
+        return acc;
+      }, {});
+    // polute get search params with hash params
+    return window.location.hash
+      .slice(1)
+      .split('#')[0]
+      .split('&')
+      .reduce((acc, part) => {
+        const item = part.split('=');
+        acc[item[0]] = decodeURIComponent(item[1]);
+        return acc;
+      }, result);
+  },
+  /**
+   * Returns all localStorage fields
+   *
+   * @returns { object } all localStorage fields
+   */
+  getLocalStorage: function () {
+    return {
+      ...localStorage,
+    };
+  },
+  /**
+   * Sets localStorage field
+   *
+   * @param {string} name - key name
+   * @param {*} value - key value
+   */
+  setLocalStorage: function (name, value) {
+    localStorage.setItem(name, value);
+  },
+  /**
+   * inits rbtr and sets all necessary fields to localStorage
+   */
+  init: function () {
+    const urlParams = window.rbtr.getUrlParams();
+    if (typeof urlParams.utm_source !== 'undefined') {
+      window.rbtr.tags.forEach(function (tag) {
+        let value = urlParams[tag];
+        value = typeof value !== 'undefined' ? value : '';
+        window.rbtr.setLocalStorage(window.rbtr.prefix + tag, value);
+      });
+    }
+    const localStorage = window.rbtr.getLocalStorage();
+    window.rbtr.tags.forEach(function (tag) {
+      let value = localStorage[window.rbtr.prefix + tag];
+      value = typeof value !== 'undefined' ? value : '';
+      window.rbtr.utmTags[tag] = value;
+    });
+  },
+};
+
+const adsManagerLogger = new window.Logger('AdsManager');
+
+const EXPERIMENTS = window.pandasConfig.EXPERIMENTS;
+
+class AdManager {
+  constructor() {
+    this.adManagerIsLoaded = false;
+    this.interstitialSlot = null;
+    this.rewardedSlot = null;
+    this.banners = [];
+  }
+  static setForceSafeFrame() {
+    adsManagerLogger.showLog('set force safe frame');
+    googletag.pubads().setForceSafeFrame(true);
+  }
+  static defineBannerSlots() {
+    // Define slots for banner ads
+    adsManagerLogger.showLog('define banner slots');
+    window.banners = EXPERIMENTS.banners.map((banner) => {
+      const _banner = googletag.defineSlot(
+        banner.slot,
+        banner.sizes,
+        banner.id
+      );
+      _banner.addService(googletag.pubads());
+      return _banner;
+    });
+    this.banners = window.banners;
+    // Define slot for banner ads
+  }
+
+  static defineInterstitialSlot() {
+    adsManagerLogger.showLog('define interstitial slot');
+    const slot = googletag.defineOutOfPageSlot(
+      EXPERIMENTS.interstitial,
+      googletag.enums.OutOfPageFormat.INTERSTITIAL
+    );
+    if (!slot) {
+      window.errorArray.push('The viewport exceeds the current max width of 2500px. Ab test variant is: ', window.variant)
+      return;
+    }
+    return slot.addService(
+      // Returns a reference to the PubAdsService.
+      // Ref: https://developers.google.com/publisher-tag/reference#googletag.pubads
+      googletag.pubads()
+    );
+  }
+
+  static defineAnchorSlot() {
+    adsManagerLogger.showLog('define anchor slot');
+    const anchor = EXPERIMENTS.anchor;
+    if (anchor && getDevice() !== 'mobile') {
+      return googletag.defineOutOfPageSlot(
+        anchor,
+        googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
+      ).addService(
+        // Returns a reference to the PubAdsService.
+        // Ref: https://developers.google.com/publisher-tag/reference#googletag.pubads
+        googletag.pubads()
+      );
+    }
+  }
+
+  static defineRelatedSlot() {
+    adsManagerLogger.showLog('define related slot');
+    const related = EXPERIMENTS.related;
+    if (related && getDevice() !== 'mobile') {
+      const _related = googletag.defineSlot(
+        related.slot,
+        related.sizes,
+        related.id
+      );
+      _related.addService(googletag.pubads());
+    }
+  }
+
+  static defineRewardedSlot() {
+    adsManagerLogger.showLog('define rewarded slot');
+    const rewarded = EXPERIMENTS.rewarded;
+    if (rewarded) {
+      adsManagerLogger.showLog(rewarded);
+      return googletag.defineOutOfPageSlot(
+        rewarded,
+        googletag.enums.OutOfPageFormat.REWARDED
+      ).addService(
+        // Returns a reference to the PubAdsService.
+        // Ref: https://developers.google.com/publisher-tag/reference#googletag.pubads
+        googletag.pubads()
+      );
+    }
+  }
+
+  static enableInterstitialService(interstitialSlot) {
+    adsManagerLogger.showLog('enable interstitial service');
+    // Adds a Service to this slot.
+    // Ref: https://developers.google.com/publisher-tag/reference#googletag.Service
+    interstitialSlot.addService(
+      // Returns a reference to the PubAdsService.
+      // Ref: https://developers.google.com/publisher-tag/reference#googletag.pubads
+      googletag.pubads()
+    );
+  }
+
+  static enableAnchorService(anchorSlot) {
+    adsManagerLogger.showLog('enable anchor service');
+    // Adds a Service to this slot.
+    // Ref: https://developers.google.com/publisher-tag/reference#googletag.Service
+    anchorSlot.addService(
+      // Returns a reference to the PubAdsService.
+      // Ref: https://developers.google.com/publisher-tag/reference#googletag.pubads
+      googletag.pubads()
+    );
+  }
+
+  static enableRewardedService(rewardedSlot) {
+    adsManagerLogger.showLog('enable rewarded service');
+    // Adds a Service to this slot.
+    // Ref: https://developers.google.com/publisher-tag/reference#googletag.Service
+    rewardedSlot.addService(
+      // Returns a reference to the PubAdsService.
+      // Ref: https://developers.google.com/publisher-tag/reference#googletag.pubads
+      googletag.pubads()
+    );
+  }
+
+  static collapseEmptyDivs() {
+    adsManagerLogger.showLog('collaps empty divs');
+    googletag.pubads().collapseEmptyDivs();
+  }
+  static setTargeting() {
+    adsManagerLogger.showLog('set targeting');
+    googletag
+      .pubads()
+      .setTargeting('rbtr_targeting', [
+        window.rbtr.utmTags['utm_campaign'] +
+          '_' +
+          window.rbtr.utmTags['utm_term'],
+      ]);
+  }
+  static enableLazyLoading() {
+    adsManagerLogger.showLog('enable lazy loading');
+    googletag.pubads().enableLazyLoad({
+      fetchMarginPercent: 50,
+      renderMarginPercent: 50,
+      mobileScaling: 1.0,
+    });
+  }
+  static enableServices() {
+    adsManagerLogger.showLog('enable services');
+    googletag.enableServices();
+  }
+
+  static sendAnalytics(interSlot) {
+    if (typeof ga !== 'undefined') {
+      // Send ga event of interstitial ad
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'interstitial-created',
+        eventLabel: !!interSlot,
+        nonInteraction: true,
+      });
+      adsManagerLogger.showLog('send analytics');
+    }
+  }
+  static displayInterstitial(interstitialSlot) {
+    if (!interstitialSlot) return;
+    adsManagerLogger.showLog('display interstitial');
+    googletag.display(interstitialSlot);
+  }
+
+  static displayAnchor(anchorSlot) {
+    if (!anchorSlot) return;
+    adsManagerLogger.showLog('display anchor');
+    googletag.display(anchorSlot);
+  }
+
+  static displayBanners() {
+    EXPERIMENTS.banners.forEach((banner) => {
+      const bannerPlaceholder = document.getElementById(banner.id);
+      if (!bannerPlaceholder) {
+        const e = `Node with id: ${banner.id} is ${bannerPlaceholder} and not present in Document, please review code.`
+        window.errorArray.push(e)
+        console.error(e);
+        return;
+      }
+      adsManagerLogger.showLog('display banners');
+      googletag.display(banner.id);
+    });
+  }
+
+  static displayRelated() {
+    if (!EXPERIMENTS.related || getDevice() === 'mobile') return;
+    adsManagerLogger.showLog('display related');
+    googletag.display(EXPERIMENTS.related.id);
+  }
+
+  static displayRewarded(rewardedSlot) {
+    if (!rewardedSlot) return;
+    adsManagerLogger.showLog('display rewarded');
+    googletag.display(rewardedSlot);
+  }
+
+  static getTestMode() {
+    adsManagerLogger.showLog('get test mode');
+    const testMode = googletag.pubads().get('adsense_test_mode');
+
+    if (!testMode) return;
+
+    window.analyticsService.track({
+      e: 'page-dev',
+      c: 'tech',
+    });
+  }
+
+  static setTestMode() {
+    adsManagerLogger.showLog('set test mode');
+    localStorage.setItem('test-mode', true);
+    googletag.pubads().set('adsense_test_mode', 'on');
+  }
+  static enableSingleRequest() {
+    googletag.pubads().enableSingleRequest();
+  }
+
+  initAdManager() {
+    // prevent adManagere double init. Early return
+    if (this.adManagerIsLoaded) return;
+    adsManagerLogger.showLog('init ad manager');
+    this.adManagerIsLoaded = true;
+    // init rbtr and polute
+    window.rbtr.init();
+    googletag.cmd.push(() => {
+      AdManager.setForceSafeFrame();
+      // define slot for interstitial ad
+      const interstitialSlot = AdManager.defineInterstitialSlot();
+      // define slot for rewarded ad
+      const rewardedSlot = AdManager.defineRewardedSlot();
+      // define slot for anchor ad
+      const anchorSlot = AdManager.defineAnchorSlot();
+
+      AdManager.defineBannerSlots();
+
+      window.rewardedSlot = rewardedSlot;
+      window.interstitialSlot = interstitialSlot;
+
+      this.interstitialSlot = interstitialSlot;
+      this.rewardedSlot = rewardedSlot;
+
+      // TODO: temporary removed
+      // AdManager.sendAnalytics(interstitialSlot);
+
+      // TODO: remove comment to enable collapse of empty divs
+      // AdManager.collapseEmptyDivs();
+      AdManager.setTargeting();
+      if (
+        localStorage.getItem('test-mode') ||
+        new URL(document.location).searchParams.get('test-mode')
+      ) {
+        AdManager.setTestMode();
+      }
+      AdManager.getTestMode();
+      if (EXPERIMENTS.isSRA) {
+        AdManager.enableSingleRequest();
+      }
+      // TODO: remove comments to enable ad lazyLoad
+      // AdManager.enableLazyLoading();
+      // Enables all GPT services that have been defined for ad slots on the page.
+      AdManager.enableServices();
+      AdManager.displayBanners();
+      AdManager.displayRelated();
+
+      AdManager.displayInterstitial(interstitialSlot);
+      AdManager.displayAnchor(anchorSlot);
+      AdManager.displayRewarded(rewardedSlot);
+    });
+  }
+}
+window.AdManager = AdManager;
+window.admanager = new AdManager();
+window.admanager.initAdManager();
+</script>
+  <script>
+    let pageNumber = +(sessionStorage.getItem('pageNumber') || 0);
+
+    if (!sessionStorage.getItem(location.href)) {
+      if (pageNumber === 1) {
+        window.analyticsService.track(null, { e: 'second-unique', p: { id: 'u19BCKyLm8YDEMGvkPUC' } });
+      }
+      pageNumber++;
+      sessionStorage.setItem('pageNumber', pageNumber);
+      sessionStorage.setItem(location.href, true);
+    }
+  </script>
+  <style>*{box-sizing:border-box}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}:root{--bg-main-0:#fff;--bg-main-1:#e3e3e3;--bg-main-2:#ebebeb;--bg-main-3:#f6f6f6;--bg-main-4:#efefef;--bg-alternative-0:#00b112;--bg-alternative-1:#195ba4;--bg-alternative-2:#1a518d;--bg-alternative-3:#3997ff;--bg-alternative-4:#2f70b8;--bg-alternative-5:rgba(2, 122, 255, 0.75);--bg-alternative-6:#04B800;--fg-link:#646cff;--fg-link-hover:#535bf2;--fg-link-2:#027aff;--fg-link-0:rgba(2, 122, 255, 1);--fg-main-0:#333;--fg-main-1:#bfbfbf;--fg-main-2:#b1b1b1;--fg-main-3:#fff;--fg-main-4:#999999;--fg-main-5:#a9d3ff;--fg-main-6:#666666;--fg-alternative-1:#27c200;font-family:Roboto,Tahoma,sans-serif;line-height:1.5;font-weight:400;color-scheme:light dark;color:var(--fg-main-0);background-color:var(--bg-main-0);font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}a{font-weight:500;color:var(--fg-link);text-decoration:inherit}a *{pointer-events:none}a:hover{color:var(--fg-link-hover)}body{margin:0;min-height:100vh;background-color:var(--bg-main-1)}#app{max-width:1280px;margin:0 auto;text-align:center}.main{max-width:460px;margin:0 auto}@media (prefers-color-scheme:light){:root{color:#213547;background-color:#fff}}.toggler{--toggler-item-width:16px;--toggler-item-transform-x:7px;width:20px;height:14px;position:relative;cursor:pointer}.toggler__item{background-color:var(--bg-main-0);width:var(--toggler-item-width);position:absolute;top:0;height:2px;right:0;border-radius:4px;transition:.2s linear all}.toggler__item:nth-child(2){--toggler-item-width:20px;top:50%}.toggler__item:nth-child(3){--toggler-item-width:10px;top:100%}.toggler.is-hidden{opacity:0}.toggler.is-active .toggler__item:first-child{--toggler-item-width:20px;transform:translate(0,var(--toggler-item-transform-x)) rotate(-45deg)}.toggler.is-active .toggler__item:nth-child(2){opacity:0}.toggler.is-active .toggler__item:nth-child(3){--toggler-item-width:20px;transform:translate(0,calc(var(--toggler-item-transform-x) * -1)) rotate(45deg)}.pill{--pill-color:var(--fg-link-2);--pill-border-radius:20px;--pill-offset-vertical:10px;--pill-offset-horizontal:20px;background-color:var(--pill-color);border-radius:var(--pill-border-radius);padding:var(--pill-offset-vertical) var(--pill-offset-horizontal);color:var(--fg-main-3);font-size:1em;font-weight:700;display:flex;align-items:center;justify-content:space-between;gap:4px;box-shadow:0 4px 12px rgba(0,85,104,.25)}.pill:not(div):hover{--pill-color:var(--bg-alternative-3);color:var(--fg-main-3);cursor:pointer}.pill--button{--pill-offset-vertical:8px;--pill-offset-horizontal:34px;width:max-content}.pill--inline{display:inline-flex;--pill-offset-vertical:3px;--pill-offset-horizontal:7px;text-transform:uppercase;line-height:1;box-shadow:none;letter-spacing:1px;font-size:8px;transform:translateY(-2px)}.pill--sm{--pill-offset-vertical:9px;--pill-offset-horizontal:16px}.pill--dark{--pill-color:var(--bg-alternative-2)}.pill--read-more{--pill-offset-vertical:16px;--pill-border-radius:24px;--pill-color:var(--bg-alternative-0);box-shadow:0 4px 12px rgba(0,88,9,.25);font-size:16px}.pill i{font-size:12px}.pill.disabled{opacity:.4}.banner{--banner-width:336px;--banner-height:280px;position:relative;width:var(--banner-width);margin:0 auto}.banner--horizontal{--banner-width:300px;--banner-height:250px}.banner--horizontal-lg{--banner-width:336px;--banner-height:280px}.banner--vertical{--banner-width:300px;--banner-height:400px}.banner--vertical-lg{--banner-width:320px;--banner-height:480px}.banner--vertical-xl{--banner-height:600px;--banner-width:336px}.banner header{background-color:var(--bg-main-2);min-width:var(--banner-width);min-height:var(--banner-height);display:flex;justify-content:center;align-items:center}.banner footer{background-color:var(--bg-main-2);width:var(--banner-width);padding:6px;color:var(--fg-main-3);text-transform:uppercase;font-size:8px;font-weight:700;text-align:center}.banner span{position:absolute;top:calc(40% - 14px);left:50%}@keyframes spinner{to{transform:rotate(360deg)}}.card{border-radius:12px;overflow:hidden;height:fit-content}.card--shadow{box-shadow:0 8px 24px rgba(0,85,104,.1)}.card--tips{background-color:var(--bg-main-3);padding:16px}.card header,.card>a{padding:21px 24px;position:relative;overflow:hidden;display:block;--shadow-height:100%;--shadow-opacity:0.5;--shadow-gradient-top:rgba(0, 33, 69, 0);--shadow-gradient-bottom:#002145;height:160px}.card header:before,.card>a:before{content:'';position:absolute;top:0;left:0;height:var(--shadow-height);width:100%;background:linear-gradient(180deg,var(--shadow-gradient-top) 0,var(--shadow-gradient-bottom) 100%);opacity:var(--shadow-opacity);z-index:0;pointer-events:none}.card header:after,.card>a:after{content:'';background:url('/cdn-cgi/image/format=webp,fit=contain,quality=80/solitaire/assets/images/arrow.png') no-repeat center;width:60px;height:60px;top:50%;left:50%;transform:translate(-50%,-50%);position:absolute}.card header p,.card>a p{color:var(--fg-main-3);font-weight:600;position:absolute;bottom:20px;font-size:20px}.card header img:last-of-type,.card>a img:last-of-type{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);min-width:100%;width:auto;height:auto;min-height:100%;z-index:-1;text-align:center;line-height:160px}.card header img:last-of-type[src='']:after,.card>a img:last-of-type[src='']:after{content:'';width:100%;height:100%;background-color:var(--bg-main-2);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1}.card header img:last-of-type[src='']:before,.card>a img:last-of-type[src='']:before{content:'';box-sizing:border-box;position:absolute;top:50%;left:50%;width:20px;height:20px;margin-top:-10px;margin-left:-10px;border-radius:50%;border:2px solid #ccc;border-top-color:#000;animation:spinner .6s linear infinite;z-index:2}.card section{padding:20px 24px;position:relative;height:220px;transition:.2s linear all;--shadow-height:100%;--shadow-gradient-top:rgba(255, 255, 255, 0);--shadow-gradient-bottom:var(--fg-main-3);--shadow-opacity:1}.card section:before,.card section>a{content:'';position:absolute;top:0;left:0;height:var(--shadow-height);width:100%;background:linear-gradient(180deg,var(--shadow-gradient-top) 0,var(--shadow-gradient-bottom) 100%);opacity:var(--shadow-opacity);z-index:10;pointer-events:none}.card section>a{pointer-events:all;z-index:10}.card section.is-active{height:fit-content}.card section.is-active:before,.card section.is-active>a{display:none}.card section.is-active .card__buttons{margin:10px auto 0;padding:10px 0 0;border-top:1px solid var(--bg-main-2);position:static;transform:translate(0,0)}.card section.is-active .card__buttons a:first-of-type{display:flex}.card section.is-active .card__buttons a:last-of-type{background-color:transparent;box-shadow:none;color:var(--fg-link-2)}.card section.is-active .card__buttons a:last-of-type:before{transform:translateY(-50%) rotate(270deg);color:var(--fg-link-2)}.card section.is-active .card__buttons a:last-of-type .button__text span:first-child{display:none}.card section.is-active .card__buttons a:last-of-type .button__text span:last-child{display:block}.card section.is-active .card__buttons p{display:block}.card ol{list-style:decimal}.card ul li{position:relative;padding-left:12px;line-height:20px;--list-bullet-color:var(--fg-link-2)}.card ul li:before{content:'';position:absolute;width:6px;height:6px;border-radius:100%;left:-1px;top:10px;background-color:var(--list-bullet-color)}.card ul li+li{margin-top:8px;position:relative}.card__text>p{line-height:20px;font-size:16px;font-weight:400}.card__text>p+p{margin-top:6px}.card__text a.js-anchor{position:relative;padding-left:12px;line-height:26px;--list-bullet-color:var(--fg-link-2);display:block}.card__text a.js-anchor:before{content:attr(data-index);position:absolute;width:6px;height:6px;border-radius:100%;left:-16px;color:var(--fg-main-0);text-align:right;width:25px}.card__caption{color:var(--fg-main-3)}.card__tip{color:var(--fg-main-4);opacity:.75;padding-bottom:62px}.card__title{color:var(--fg-main-3);font-weight:600}.card__title--info{color:var(--fg-main-0);padding-left:12px;border-left:4px solid #ffbc00;margin-bottom:12px}.card__buttons{display:flex;flex-direction:column;justify-content:center;align-items:center;position:absolute;bottom:14px;left:50%;transform:translateX(-50%);z-index:12;gap:6px}.card__buttons p{display:none;text-align:center;font-weight:700;line-height:18px;margin-bottom:6px}.card__buttons a:first-of-type{display:none;align-items:center;--pill-offset-vertical:16px;--pill-offset-horizontal:24px;--pill-border-radius:24px;--pill-color:var(--bg-alternative-0);box-shadow:0 4px 12px rgba(0,88,9,.25);font-size:16px;background-color:var(--pill-color);border-radius:var(--pill-border-radius);padding:var(--pill-offset-vertical) var(--pill-offset-horizontal);color:var(--fg-main-3);font-weight:700}.card__buttons a:first-of-type i{display:inline-flex;font-size:20px;line-height:16px;margin-top:-6px;margin-right:6px}.card__buttons a:last-of-type{--pill-offset-vertical:10px;--pill-color:var(--fg-link-2);--pill-border-radius:20px;--pill-offset-vertical:10px;--pill-offset-horizontal:20px;background-color:var(--pill-color);border-radius:var(--pill-border-radius);padding:var(--pill-offset-vertical) var(--pill-offset-horizontal) var(--pill-offset-vertical) 36px;color:var(--fg-main-3);font-size:1em;font-weight:700;display:flex;align-items:center;justify-content:space-between;gap:4px;box-shadow:0 4px 12px rgba(0,85,104,.25);position:relative}.card__buttons a:last-of-type:before{content:'❯';position:absolute;top:50%;transform:translateY(-50%) rotate(90deg);left:18px}.card__buttons a:last-of-type span:last-child{display:none}.header{padding:20px 16px;display:flex;justify-content:space-between;align-items:center;position:absolute;z-index:20000;top:0;left:0;right:0;max-width:460px;margin:0 auto;width:100%;overflow-x:visible}.header__logo{color:var(--fg-main-3);display:flex;align-items:center;font-weight:600;font-size:1em;letter-spacing:1px;gap:6px}.header__logo:hover{color:var(--fg-main-3)}.header__toggler{position:relative;z-index:12312323}.header__toggler.is-active{opacity:0}.header__nav-toggler{position:absolute;top:20px;right:16px}.header nav{max-width:340px;width:100%;background-color:var(--bg-alternative-1);padding:30px 36px 0;position:absolute;right:0;top:0;z-index:2000;min-height:100vh;transition:.2s linear all;opacity:0;pointer-events:none}.header nav.is-active{opacity:1;pointer-events:all}.header nav a{padding:20px 0;color:var(--fg-main-3);font-size:20px;line-height:23px;font-weight:600;display:block}.header nav a+a{border-top:1px solid var(--bg-alternative-4)}.hero{position:relative;padding:0 16px 30px;overflow:hidden;display:block;--shadow-height:100%;--shadow-opacity:0.5;--shadow-gradient-top:rgba(0, 33, 69, 0);--shadow-gradient-bottom:#002145}.hero>div{position:relative;z-index:1}.hero .hero__content span,.hero h1{margin-top:58px;margin-bottom:6px;color:var(--fg-main-3);font-size:24px;font-weight:600;line-height:1.2}.hero footer{display:flex;justify-content:space-between;align-items:center}.hero img{position:absolute;height:auto;min-width:100%;top:50%;left:50%;transform:translate(-50%,-50%)}.hero time{color:#bfbfbf;text-transform:uppercase;letter-spacing:1px;font-size:10px}.hero__rating{display:flex;align-items:center;justify-content:space-between;gap:6px}.hero__rating-count{color:var(--fg-main-3);font-weight:600;font-size:14px}.hero__rating span{color:var(--fg-main-1);font-size:8px}.content{margin-top:-14px;background-color:#fff;position:relative;z-index:20;border-top-left-radius:12px;border-top-right-radius:12px;overflow:hidden}.content--no-offset{margin-top:0;border-radius:0}.content--no-border{border-radius:0;margin-top:0;background-color:#ebebeb}.content--no-border .content__description{padding-left:16px;padding-right:16px}.content p{line-height:20px}.content p a:not(.link){color:inherit}.content__title{display:flex;justify-content:space-between}.content__description{padding:12px 24px 0}.content__pill{margin-right:8px}.content__banner{margin:12px 0;background-color:#ebebeb}.content__header{overflow:hidden;position:relative}.content__header:after{content:'';position:absolute;right:0;top:26px;height:24px;width:32px;background:linear-gradient(90deg,rgba(255,255,255,0) 0,#fff 50.52%);pointer-events:none}.footer{background-color:var(--bg-main-4);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:16px 0}.footer__logo{color:var(--fg-link-2);display:flex;align-items:center;gap:6px;font-weight:600;letter-spacing:1px}.footer__copy{letter-spacing:1px;text-transform:uppercase;color:var(--fg-main-2);font-size:8px}.caption{--title-fs:20px;font-size:var(--title-fs);line-height:1.2}.loading{background-color:#fff}.loading::after,.loading::before{display:none}.loading *{opacity:0}.loading .banner__footer{color:#fff}.loading .banner__content{opacity:1}.loading .banner__content *{opacity:1}.ab-fixed{background-color:var(--bg-main-1);padding-bottom:95px}.ab-fixed .content__description p{line-height:20px}.ab-fixed .content__description p+p{margin-top:10px}.ab-fixed .content__description--offset-md{padding:24px}.ab-fixed .btn-cta .pill,.ab-fixed .btn-wrapper .pill{margin-top:16px;align-items:center;--pill-offset-vertical:16px;--pill-offset-horizontal:24px;--pill-border-radius:24px;box-shadow:none;font-size:16px;justify-content:center;background-color:var(--bg-alternative-6);border-radius:8px;padding:16px var(--pill-offset-horizontal);color:var(--fg-main-3);font-weight:700;font-size:20px;line-height:24px;width:100%;box-shadow:0 4px 12px 0 rgba(0,88,9,.25)}.ab-fixed .btn-wrapper{background-color:#fff;position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:460px;padding:0 20px;z-index:20000}.ab-fixed .btn-wrapper p{color:#bcbcbc;font-size:12px;font-weight:400;display:flex;margin:6px 0;align-items:center;justify-content:center;gap:4px}.ab-fixed .btn-wrapper p span{border-radius:100px;background-color:#bcbcbc;color:#fff;display:inline-block;padding:0 4px 1px}.ab-fixed ul{width:100%}.ab-fixed ul li b{font-weight:700}.ab-fixed ul li{text-align:left;font-size:14px}.ab-fixed ul li:last-child{margin-bottom:10px}.ab-fixed ul li+li{margin-top:8px}.ab-fixed ul li img{display:inline-block;width:20px;transform:translateY(5px);margin-right:10px}</style>
+
+  <style>:root{--fg-link-0:#d7200a;--fg-link-2:#d7200a;--bg-alternative-5:#d7200a}* .header__logo{position:absolute;left:0;top:0;padding:12px;background-color:var(--fg-link-2);border-bottom-right-radius:17px}.header-togler-holder{position:absolute;top:0;right:0;padding:13px 12px;background-color:var(--fg-link-2);border-bottom-left-radius:17px}.hero__cta{display:none}.hero__content{height:200px;display:block}.hero__content span{margin:0!important;display:block;bottom:30px;position:absolute;background:var(--fg-link-2);width:90%}.hero__footer{position:absolute;bottom:0;right:0;display:none}</style>
+  <script type="module" crossorigin src="/assets/tips-trivia-31a08b9a.js"></script>
+</head>
+
+<body data-url="body" class="">
+  <main class="main">
+    <header class="header">
+      <a data-url="#logo" id="header-logo-x" href="/rbx/tips-3" class="header__logo js-scroll-to-tip"><svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.9939 5.62998C10.9806 7.62266 10.1565 9.18067 8.53674 10.3022C7.50236 11.0186 6.4692 11.7375 5.41301 12.4194C5.03429 12.6635 4.68222 12.962 4.25441 13.1284C3.70057 13.3436 3.22973 13.1198 3.03825 12.5415C2.91464 12.1672 3.07521 11.78 3.49212 11.4884C3.99143 11.1401 4.4974 10.8022 5.00096 10.4594C5.73841 9.95752 6.46314 9.43469 7.21695 8.95933C8.26769 8.29654 8.95 7.40563 9.1736 6.13925C9.32873 5.26067 9.15057 4.43141 8.73549 3.72485C8.20891 2.82777 7.4145 2.14094 6.34255 1.96461C4.8022 1.71121 3.46121 2.05216 2.45592 3.56701C2.00266 4.25015 1.7827 5.02083 1.8433 5.84947C1.89783 6.59549 2.18627 7.25828 2.60317 7.87359C2.87464 8.27496 3.20428 8.64736 3.33335 9.13443C3.4909 9.73063 3.14429 10.2898 2.54864 10.3373C2.23838 10.362 1.9554 10.1795 1.77785 9.92854C1.11493 8.99324 0.450194 8.06657 0.165999 6.90623C-0.136375 5.67622 -0.0194251 4.48752 0.465949 3.36664C1.02949 2.06511 1.95479 1.07617 3.27336 0.489213C3.9787 0.17539 4.70282 -0.00834046 5.45967 0.000291195C6.27953 0.0101559 7.09819 0.127916 7.8417 0.508942C9.2954 1.25496 10.3492 2.37091 10.8158 3.99428C10.9685 4.52574 11.0181 5.07139 10.9939 5.62998Z" fill="currentColor"/>
+          <path d="M4.87668 15.9995C4.53007 15.9773 4.22164 15.8355 4.05743 15.5297C3.86594 15.1727 3.96835 14.7541 4.26527 14.4698C4.39313 14.3471 4.52765 14.23 4.68156 14.1307C5.38084 13.6769 6.08739 13.2293 6.75031 12.7244C7.06056 12.4882 7.349 12.2552 7.74045 12.2194C8.19007 12.1787 8.52699 12.4069 8.67848 12.8243C8.79179 13.1369 8.6397 13.5956 8.31975 13.8194C7.82226 14.1677 7.31022 14.4945 6.8097 14.8391C6.32978 15.169 5.85592 15.5075 5.38266 15.8472C5.22935 15.9569 5.06514 16.01 4.87668 15.9995Z" fill="currentColor"/>
+        </svg><span>TIPSLAB</span></a>
+      <a data-url="#menu" id="header-toggler-x" href="/rbx/tips-3" class="header-togler-holder js-scroll-to-tip">
+        <div class="header__toggler toggler">
+          <div class="toggler__item"></div>
+          <div class="toggler__item"></div>
+          <div class="toggler__item"></div>
+        </div>
+      </a>
+      <nav class="header__nav">
+        <a data-url="#menu-home" class="header__item js-self" href="/rbx/tips">Home</a>
+        <a data-url="#menu-play" class="header__item js-self" href="https://roblox.com">Play Roblox</a>
+        <a data-url="#menu-tips" class="header__item js-self" href="/rbx/tips">Roblox Tips</a>
+        <a data-url="#menu-ios" class="header__item js-href" data-href=".js-to-app">Play on iOS</a>
+        <a data-url="#menu-contact" class="header__item js-self" href="/rbx/tips">Contact Us</a>
+        <div class="header__nav-toggler toggler is-hidden">
+          <div class="toggler__item"></div>
+          <div class="toggler__item"></div>
+          <div class="toggler__item"></div>
+        </div>
+      </nav>
+    </header>
+    <a data-url="#hero" id="hero-holder-x" href="/rbx/tips-2" class="hero js-scroll-to-tip">
+  <img class="hero__img" src="/cdn-cgi/image/format=webp,fit=contain,quality=80/rbx/assets/images/hero3.png" alt="Hero" width="460" height="276">
+  <span class="hero__content">
+    <span>
+      You can earn Free Robux with Microsoft
+    </span>
+  </span>
+</a>
+      <section class="content" style="z-index:40">
+        <div data-url="content-banner-1" class="content__banner" style="margin-top:0">
+          <div class="banner js-banner">
+            <span class="js-banner__center"></span>
+            <header data-url="banner-1" id="display-top"></header>
+            <footer>Advertising</footer>
+          </div>
+        </div>
+        <div class="content__description content__description--offset-sm">
+          <p>Roblox is a gaming platform that allows you to create your own games and play millions of games made by
+            other users. You can customize your avatar with thousands of items and accessories, and join various
+            communities and groups that share your interests. Roblox is also a social platform where you can chat,voice
+            call, and hang out with your friends and millions of other players from around the world.
+
+          </p>
+          <p>Roblox is more than just a game. It’s a global phenomenon that lets you unleash your imagination and
+            creativity. You can design your own games using the built- in editor or code your own scripts using the Lua
+            programming language. You can also explore different genres and themes, from adventure and role- playingto
+            horror and sci-fi. Roblox features full cross-platform support, meaning you can play on any device,including
+
+            PC, mobile, Xbox One, and VR headsets.</p>
+          <div class="btn-cta">
+            <a href="/rbx/tips-trivia-1"><span class="pill">
+                Call to action</span></a>
+
+          </div>
+        </div>
+      </section>
+      <div class="content">
+        <div class="content__description content__description--offset-md">
+          <div data-url="tips-list-holder" class="card card--tips">
+            <p class="card__title card__title--info caption">Tips list</p>
+            <ul class="card__list">
+              <li class="card__list-item">You can earn Free Robux with Microsoft
+                <a href="/rbx/tips-trivia-1" class="js-to-web-site link link--default">View tip <i>➜</i>
+                </a>
+              </li>
+              <li class="card__list-item">Watch videos and get your reward!
+                <a href="/rbx/tips-trivia-2" class="js-to-web-site link link--default">View tip <i>➜</i>
+                </a>
+              </li>
+              <li class="card__list-item">Take surveys to get up to 2,000 free Robux!
+                <a href="/rbx/tips-trivia-3" class="js-to-web-site link link--default">View tip <i>➜</i>
+                </a>
+              </li>
+              <li class="card__list-item">Search Facebook and gain Robux!
+                <a href="/rbx/tips-trivia-4" class="js-to-web-site link link--default">View tip <i>➜</i>
+                </a>
+              </li>
+              <li class="card__list-item">Save money with popular platforms and buy Robux!
+                <a href="/rbx/tips-trivia-5" class="js-to-web-site link link--default">View tip <i>➜</i>
+                </a>
+              </li>
+              <li class="card__list-item">Take part in Free Robux Giveaways
+                <a href="/rbx/tips-trivia-6" class="js-to-web-site link link--default">View tip <i>➜</i>
+                </a>
+              </li>
+              <li class="card__list-item">Get Roblox Gift Cards from Amazon
+                <a href="/rbx/tips-trivia-7" class="js-to-web-site link link--default">View tip <i>➜</i>
+                </a>
+              </li>
+              <li class="card__list-item">Look up for Huge Discounts
+                <a href="/rbx/tips-trivia-8" class="js-to-web-site link link--default">View tip <i>➜</i>
+                </a>
+              </li>
+              <li class="card__list-item">Go to auctions to get Robux cheap
+                <a href="/rbx/tips-trivia-9" class="js-to-web-site link link--default">View tip <i>➜</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="btn-wrapper">
+        <a data-url="#trivia-btn" class="button-wrapper" href="/rbx/tips-trivia-3"><span class="pill">
+            Read the tip</span></a>
+        <p data-url="loading-view-ad-hint">View this ad to get access to 13 tips</p>
+      </div>
+      <footer class="footer">
+        <div class="footer__logo">
+          <span>TIPSLAB</span>
+        </div>
+        <p class="footer__copy">© 2023 Tipslab</p>
+      </footer>
+  </main>
+  <script async src="https://pagead2.googlesyndication.com/pagead/osd.js?fcd=true"></script>
+  
+  <script>class DocumentClasses {
+  constructor() {
+    this.classes = {
+      inter: [
+        'inter-0',
+        'inter-1',
+        'inter-2',
+        'inter-3',
+        'inter-4',
+        'inter-5',
+        'inter-6',
+        'inter-7',
+        'inter-seen',
+        'inter-ready',
+      ],
+      re: [
+        're-0',
+        're-1',
+        're-2',
+        're-3',
+        're-4',
+        're-5',
+        're-6',
+        're-7',
+        're-seen',
+        're-ready',
+      ],
+    };
+  }
+  init() {
+    this.setClass(0);
+  }
+
+  setClass({ state, slot, classes }) {
+    if (!slot) {
+      return;
+    }
+    this.classes[slot].forEach((_class) =>
+      document.documentElement.classList.remove(_class)
+    );
+    document.documentElement.classList.add(this.classes[slot][state]);
+    if (!classes) {
+      return;
+    }
+    if (Array.isArray(classes)) {
+      document.documentElement.classList.add(...classes);
+    } else {
+      document.documentElement.classList.add(classes);
+    }
+  }
+
+  removeClass(klass) {
+    document.documentElement.classList.remove(klass);
+  }
+}
+
+const documentClasses = new DocumentClasses();
+
+documentClasses.init();
+
+class StateChangableAdsListener {
+  static changeState({ state, slot, classes }) {
+    window.pandas.setState(state, slot);
+    documentClasses.setClass({ state, slot, classes });
+  }
+}
+
+class HelperClass {
+  constructor() {
+    this.admanager = window.admanager;
+    this.pandas = window.pandas;
+    this.googletag = window.googletag;
+    this.slots = {};
+    this.analyticsService = window.analyticsService;
+  }
+  setSlotTime(slot) {
+    this.slots[slot.getSlotId().getId()] = performance.now();
+  }
+
+  getSlotTime(slot) {
+    return performance.now() - this.slots[slot.getSlotId().getId()];
+  }
+
+  addCallbacks(callback) {
+    this.googletag.cmd.push(() => callback(this.googletag));
+  }
+  getSlotType(slot) {
+    switch (slot) {
+      case this.admanager.interstitialSlot:
+        return 'inter';
+      case this.admanager.rewardedSlot:
+        return 're';
+      default:
+        return 'display';
+    }
+  }
+
+  getEventType(slot, type) {
+    switch (slot) {
+      case this.admanager.interstitialSlot:
+        return `inter-${type}`;
+      case this.admanager.rewardedSlot:
+        return `re-${type}`;
+      default:
+        return `display-${type}`;
+    }
+  }
+}
+window.StateChangableAdsListener = StateChangableAdsListener;
+window.HelperClass = HelperClass;
+
+</script>
+  <script>const rewardedLogger = new window.Logger('Ads Rewarded');
+class RewardedListener extends HelperClass {
+  constructor() {
+    super();
+    this.slots = {};
+    this.type = 're';
+    this.slotsVisible = {};
+  }
+  init() {
+    window.googletag = window.googletag || {
+      cmd: [],
+    };
+
+    this.googletag.cmd.push(() => {
+      this.googletag.pubads().addEventListener('slotRequested', (event) => {
+        const slotType = this.getSlotType(event.slot);
+        if (slotType !== this.type) return;
+        StateChangableAdsListener.changeState({ state: 1, slot: slotType });
+        this.setSlotTime(event.slot);
+        rewardedLogger.showLog(
+          this.getEventType(event.slot, 'requested')
+        );
+      });
+
+      this.googletag
+        .pubads()
+        .addEventListener('slotResponseReceived', (event) => {
+          const slotType = this.getSlotType(event.slot);
+          if (slotType !== this.type) return;
+          rewardedLogger.showLog(
+            this.getEventType(event.slot, 'received')
+          );
+          const state = !!event.slot.getResponseInformation() ? 3 : 2;
+          StateChangableAdsListener.changeState({
+            state: state,
+            slot: slotType,
+            classes: state === 3 && this.getEventType(event.slot, 'loading'),
+          });
+          if (this.interstitialSeenAt && !event.slot.getResponseInformation()) {
+            StateChangableAdsListener.changeState({
+              state: 9,
+              slot: slotType,
+              classes: ['re-finish', 're-no'],
+            });
+          }
+          if (!event.slot.getResponseInformation()) return;
+          const eventName = this.getEventType(event.slot, 'loaded');
+          const slotTime = this.getSlotTime(event.slot);
+
+          this.analyticsService.track({
+            e: eventName,
+            c: 'ads',
+            tc: slotTime,
+          });
+        });
+
+      this.googletag.pubads().addEventListener('slotRenderEnded', (event) => {
+        const slotType = this.getSlotType(event.slot);
+        if (slotType !== this.type) return;
+        rewardedLogger.showLog(
+          this.getEventType(event.slot, 'slotRenderEnded')
+        );
+        if (event.slot.getResponseInformation()) {
+          StateChangableAdsListener.changeState({ state: 4, slot: slotType });
+        }
+      });
+
+      this.googletag.pubads().addEventListener('rewardedSlotReady', (event) => {
+        if (event.slot.getResponseInformation()) {
+          const slot = event.slot;
+          rewardedLogger.showLog(
+            'rewardedSlotReady ' + slot.getSlotElementId()
+          );
+          StateChangableAdsListener.changeState({ state: 5, slot: 're' });
+          window.showRewarded = true;
+
+          this.analyticsService.track({
+            e: 're-ready',
+            c: 'ads',
+          });
+        } else {
+          window.showInterstitial = true;
+        }
+      });
+
+      this.googletag
+        .pubads()
+        .addEventListener('slotVisibilityChanged', (event) => {
+          const slotType = this.getSlotType(event.slot);
+          if (slotType !== this.type) return;
+          const isVisible = event.inViewPercentage > 0;
+          const status = isVisible ? `${slotType}-show` : null;
+
+          rewardedLogger.showLog('slotVisibilityChanged ' + status);
+
+          if (!isVisible) return;
+          this.pandas.bumpAdsViewedNumber();
+          this.pandas.bumpViewRewarededCount();
+          StateChangableAdsListener.changeState({
+            state: 6,
+            slot: slotType,
+            classes: [`re-show`],
+          });
+          this.slotsVisible[event.slot.getSlotId().getId()] = performance.now();
+          this.analyticsService.track({
+            e: status,
+            c: 'ads',
+            p: {
+              id: this.pandas.customHash,
+            },
+          });
+        });
+
+      this.googletag
+        .pubads()
+        .addEventListener('rewardedSlotGranted', (event) => {
+          const slot = event.slot;
+          rewardedLogger.showLog(
+            'rewardedSlotGranted ' + slot.getSlotElementId()
+          );
+
+          StateChangableAdsListener.changeState({ state: 7, slot: 're' });
+
+          this.analyticsService.track(
+            {
+              e: 're-ok',
+              c: 'ads',
+              p: {
+                id: this.pandas.customHash,
+              },
+            },
+            { e: 're-ok', p: { id: 'RnMUCOql17MYEMGvkPUC' } }
+          );
+        });
+
+      this.googletag
+        .pubads()
+        .addEventListener('rewardedSlotClosed', (event) => {
+          const slot = event.slot;
+          rewardedLogger.showLog(
+            'rewardedSlotClosed ' + slot.getSlotElementId()
+          );
+          this.analyticsService.track({
+            e: 're-close',
+            c: 'ads',
+          });
+          this.googletag.destroySlots([slot]);
+        });
+    });
+  }
+}
+
+window.rewardedListener = new RewardedListener();
+window.rewardedListener.init();
+</script>
+  <script>const interstitialLogger = new window.Logger('Ads Interstitial');
+class InterstitialListener extends HelperClass {
+  constructor() {
+    super();
+    this.slots = {};
+    this.slotsVisible = {};
+
+    this.showSent = false;
+    this.hideSent = false;
+
+    const seenAt = localStorage.getItem('interSeenAt');
+    this.interstitialSeenAt =
+      seenAt && Date.now() - seenAt < 1000 * 60 * 10 ? seenAt : null;
+    this.state = this.interstitialSeenAt ? 9 : 0;
+    this.type = 'inter';
+  }
+
+  isSlotInterstitial(slot) {
+    return this.admanager.interstitialSlot === slot;
+  }
+
+  init() {
+    window.googletag = window.googletag || {
+      cmd: [],
+    };
+    this.googletag.cmd.push(() => {
+      this.googletag.pubads().addEventListener('slotRequested', (event) => {
+        const slotType = this.getSlotType(event.slot);
+        if (slotType !== this.type) return;
+        StateChangableAdsListener.changeState({ state: 1, slot: slotType });
+        this.setSlotTime(event.slot);
+        interstitialLogger.showLog(this.getEventType(event.slot, 'requested'));
+      });
+
+      this.googletag
+        .pubads()
+        .addEventListener('slotResponseReceived', (event) => {
+          const slotType = this.getSlotType(event.slot);
+          if (slotType !== this.type) return;
+          interstitialLogger.showLog(this.getEventType(event.slot, 'received'));
+          const state = !!event.slot.getResponseInformation() ? 3 : 2;
+          StateChangableAdsListener.changeState({
+            state: state,
+            slot: slotType,
+            classes: state === 3 && this.getEventType(event.slot, 'loading'),
+          });
+          if (this.interstitialSeenAt && !event.slot.getResponseInformation()) {
+            StateChangableAdsListener.changeState({
+              state: 9,
+              slot: slotType,
+              classes: ['inter-finish', 'inter-no'],
+            });
+          }
+          if (!event.slot.getResponseInformation()) return;
+          const eventName = this.getEventType(event.slot, 'loaded');
+          const slotTime = this.getSlotTime(event.slot);
+
+          this.analyticsService.track({
+            e: eventName,
+            c: 'ads',
+            tc: slotTime,
+          });
+        });
+
+      this.googletag.pubads().addEventListener('slotRenderEnded', (event) => {
+        const slotType = this.getSlotType(event.slot);
+        if (slotType !== this.type) return;
+        interstitialLogger.showLog(
+          this.getEventType(event.slot, 'slotRenderEnded')
+        );
+        if (event.slot.getResponseInformation()) {
+          StateChangableAdsListener.changeState({ state: 4, slot: slotType });
+        }
+      });
+
+      this.googletag.pubads().addEventListener('slotOnload', (event) => {
+        const slotType = this.getSlotType(event.slot);
+        if (slotType !== this.type) return;
+        interstitialLogger.showLog(this.getEventType(event.slot, 'ready'));
+        window.showInterstitial = true;
+        StateChangableAdsListener.changeState({
+          state: 5,
+          slot: 'inter',
+          classes: ['inter-ready'],
+        });
+        documentClasses.removeClass('inter-loading');
+
+        const slotTime = this.getSlotTime(event.slot);
+
+        this.analyticsService.track({
+          e: 'inter-ready',
+          c: 'ads',
+          tc: slotTime,
+        });
+      });
+      this.googletag
+        .pubads()
+        .addEventListener('impressionViewable', (event) => {
+          const slotType = this.getSlotType(event.slot);
+          if (slotType !== this.type) return;
+          const eventName = this.getEventType(event.slot, 'view');
+          interstitialLogger.showLog(eventName);
+          this.pandas.bumpAdsViewedNumber();
+          this.pandas.bumpViewInterCount();
+          StateChangableAdsListener.changeState({ state: 7, slot: slotType });
+          this.interstitialSeenAt = Date.now();
+          localStorage.setItem('interSeenAt', this.interstitialSeenAt);
+          const slotTime = this.getSlotTime(event.slot);
+
+          this.analyticsService.track({
+            e: eventName,
+            c: 'ads',
+            tc: slotTime,
+            p: {
+              ad:
+                event.slot !== this.admanager.interstitialSlot
+                  ? event.slot.getSlotId().getId().split('/22735011646/')[1]
+                  : null,
+
+              id:
+                event.slot === this.admanager.interstitialSlot
+                  ? this.pandas.customHash
+                  : null,
+            },
+          });
+        });
+
+      this.googletag
+        .pubads()
+        .addEventListener('slotVisibilityChanged', (event) => {
+          const slotType = this.getSlotType(event.slot);
+          if (slotType !== this.type) return;
+          const isVisible = event.inViewPercentage > 0;
+          const status = isVisible ? `${slotType}-show` : `${slotType}-close`;
+
+          interstitialLogger.showLog(status);
+
+          if (!this.showSent && isVisible) {
+            this.showSent = true;
+            StateChangableAdsListener.changeState({
+              state: 6,
+              slot: slotType,
+              classes: [`inter-seen`],
+            });
+            this.slotsVisible[event.slot.getSlotId().getId()] =
+              performance.now();
+            this.analyticsService.track(
+              {
+                e: status,
+                c: 'ads',
+                p: {
+                  id: this.pandas.customHash,
+                },
+              },
+              { e: 'inter-show', p: { id: '0egHCLiCnssDEMGvkPUC' } }
+            );
+          }
+
+          if (!this.hideSent && !isVisible) {
+            this.aiState = 8;
+            StateChangableAdsListener.changeState({
+              state: 8,
+              slot: slotType,
+            });
+            this.hideSent = true;
+            this.analyticsService.track({
+              e: status,
+              c: 'ads',
+              tc:
+                performance.now() -
+                this.slotsVisible[event.slot.getSlotId().getId()],
+              p: {
+                id: this.pandas.customHash,
+              },
+            });
+          }
+        });
+    });
+  }
+}
+
+window.interstitialListener = new InterstitialListener();
+window.interstitialListener.init();
+</script>
+  <script>const displayListenersLogger = new window.Logger('Display Listener');
+class DisplayListener extends HelperClass {
+  constructor() {
+    super();
+    this.firstSeen = false;
+    this.type = 'display';
+  }
+
+  init() {
+    window.googletag = window.googletag || {
+      cmd: [],
+    };
+
+    this.googletag.cmd.push(() => {
+      this.googletag.pubads().addEventListener('slotRequested', (event) => {
+        const slotType = this.getSlotType(event.slot);
+        if (slotType !== this.type) return;
+        this.setSlotTime(event.slot);
+
+        displayListenersLogger.showLog(
+          this.getEventType(event.slot, 'requested')
+        );
+      });
+
+      this.googletag
+        .pubads()
+        .addEventListener('slotResponseReceived', (event) => {
+          const slotType = this.getSlotType(event.slot);
+          if (slotType !== this.type) return;
+
+          displayListenersLogger.showLog(
+            this.getEventType(event.slot, 'received')
+          );
+
+          const slotTime = this.getSlotTime(event.slot);
+          if (!this.firstSeen) {
+            this.firstSeen = true;
+
+            this.analyticsService.track({
+              e: 'display-first',
+              c: 'ads',
+              tc: slotTime,
+              p: {
+                ad: event.slot.getSlotId().getId().split('/22735011646/')[1],
+              },
+            });
+          }
+
+          this.analyticsService.track({
+            e: 'display-loaded',
+            c: 'ads',
+            tc: slotTime,
+          });
+        });
+
+      this.googletag.pubads().addEventListener('slotRenderEnded', (event) => {
+        const slotType = this.getSlotType(event.slot);
+        if (slotType !== this.type) return;
+        displayListenersLogger.showLog(
+          this.getEventType(event.slot, 'rendered')
+        );
+      });
+
+      this.googletag.pubads().addEventListener('slotOnload', (event) => {
+        const slotType = this.getSlotType(event.slot);
+        if (slotType !== this.type) return;
+        displayListenersLogger.showLog(
+          this.getEventType(event.slot, 'loaded')
+        );
+        this.pandas.bumpAdsLoadedNumber();
+
+        // if (event.slot === this.admanager.banners[0]) {
+        //   window.removeLoading && window.removeLoading();
+        // }
+      });
+
+      this.googletag
+        .pubads()
+        .addEventListener('impressionViewable', (event) => {
+          const slotType = this.getSlotType(event.slot);
+          if (slotType !== this.type) return;
+          displayListenersLogger.showLog(
+            this.getEventType(event.slot, 'viewable')
+          );
+          this.pandas.bumpAdsViewedNumber();
+          this.pandas.bumpViewDisplayCount();
+          const slotTime = this.getSlotTime(event.slot);
+          this.analyticsService.track({
+            e: 'display-view',
+            c: 'ads',
+            tc: slotTime,
+            p: {
+              ad: event.slot.getSlotId().getId().split('/22735011646/')[1],
+            },
+          });
+        });
+    });
+  }
+}
+
+window.displayListener = new DisplayListener();
+window.displayListener.init();
+</script>
+  <script>const enricherLogger = new window.Logger('Enricher');
+
+document.addEventListener('click', (e) => {
+  if (e.target && e.target.nodeName && e.target.nodeName !== 'A') {
+    enricherLogger.showLog('NotLink');
+    e.preventDefault();
+    return true;
+  }
+  const link = e.target;
+  if (window.showInterstitial || link.classList.contains('js-to-web-site')) {
+    enricherLogger.showLog('interstitial');
+    return true;
+  } else if (link.classList.contains('js-self')) {
+    enricherLogger.showLog('js-self');
+    location.reload();
+    return false;
+  } else {
+    enricherLogger.showLog('prevent');
+    e.preventDefault();
+    return false;
+  }
+})
+</script>
+  <script>const links = Array.from(document.querySelectorAll('a'));
+
+links.forEach((link, index) => {
+  const l = link.href.split('?')[0];
+  link.href = `${l}${window.location.search}`;
+});
+</script>
+  
+    <script src="https://js.sentry-cdn.com/2fe39ab4f5b24784a6fb28ca49594568.min.js" crossorigin="anonymous"></script>
+    <script>
+      window.errorArray.forEach(error => {
+        Sentry.captureException(error);
+      });
+      window.errorArray = [];
+    </script>
+    
+</body>
+
+</html>
